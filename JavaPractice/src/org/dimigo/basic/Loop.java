@@ -27,16 +27,17 @@ public class Loop {
 		int Attack = 100;
 		Scanner s = new Scanner(System.in);
 		int Choice;
+		Random Rand = new Random();
 		String[] Char = {"마법사", "영주", "기사", "농민"};
 		
 		do {
-			System.out.println("-----------------");
+			System.out.println("------------");
 			System.out.println("<< 게임 메뉴 >>");
 			System.out.println("1. 공격력 증가");
 			System.out.println("2. 공격력  감소");
 			System.out.println("3. 캐릭터 설정");
 			System.out.println("9. 종료");
-			System.out.println("-----------------");
+			System.out.println("------------");
 			System.out.print("메뉴 입력 =>");
 			
 			Choice = s.nextInt();
@@ -51,8 +52,7 @@ public class Loop {
 				System.out.println("공격력이 감소되었습니다. 현재 공격력 : "+Attack);
 				break;
 			case 3:
-				int Rand = new Random().nextInt(4);
-				System.out.println(Char[Rand]+"(으)로 설정되었습니다.");
+				System.out.println(Char[Rand.nextInt(4)]+"(으)로 설정되었습니다.");
 				break;
 			case 9:
 				System.out.println("이제 공부하세요!");
