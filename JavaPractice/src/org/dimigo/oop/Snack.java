@@ -70,7 +70,7 @@ public class Snack {
 		return price*number;
 	}
 	
-//	public String toString(){
-//		return String.format("이름 : %s\n제조사 : %s\n가격 : %,d원\n개수 : %d개",name,company,price,number);
-//	}
+	public String toString(){
+		return String.format("이름 : %s\n제조사 : %s\n가격 : %,d원\n개수 : %d개",name,company,price,number);
+	}
 }
