@@ -25,8 +25,11 @@ public class MovieTest {
 		};
 		int age = 13;
 		for (Movie movie : movies){
+			try{
 			movie.buyTicket(age);
+			} catch(Exception e){
+				System.out.println(e.getMessage());
+			}
 		}
 	}
-
 }
